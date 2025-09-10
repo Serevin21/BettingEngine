@@ -1,9 +1,9 @@
 package org.bettingengine.bettingengine;
 
-import java.util.Map;
+import java.nio.file.Path;
 
 public interface TournamentTeamPlaysParser {
 
-    Map<String, Object> parse(int tournament, int team);
+    Path dumpTeamRawJson(int teamId, int take, int skip, Path outDir);
 
 }
